@@ -9,7 +9,7 @@ const OngoingPatientsPage: React.FC = () => {
         <div className="flex justify-center"> {/* ADD THIS */}
             <div className="w-full max-w-7xl"> {/* ADD THIS */}
                 <PatientDashboard
-                    patientListEndpoint="https://healthgestbackend.onrender.com/api/ongoing-patients"
+                    patientListEndpoint="https://healthgestbackend.onrender.com/api/ongoing-patients"  //localhost:5000
                     dashboardApiEndpoint="https://healthgestbackend.onrender.com/api/ongoing-patientDetails"
                     selectorLabel="Select Ongoing Patient"
                     noPatientsMessage="No ongoing patients found"
