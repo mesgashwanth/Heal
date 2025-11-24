@@ -2,7 +2,8 @@
 import React, { ReactNode } from 'react';
 import { ICONS } from '../constants.tsx';
 import type { Page } from '../types.ts';
-import logoImage from './image/image.png'; // Import your image
+import logoImage from './image/image.png';
+// Import your image
 
 const Layout: React.FC<{ page: Page, setPage: (page: Page) => void, children: ReactNode }> = ({ page, setPage, children }) => {
 
