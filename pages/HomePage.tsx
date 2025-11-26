@@ -244,7 +244,12 @@ const HomePage: React.FC<HomePageProps> = ({ setPage }) => {
                     </div>
                 )}
 
-                {/* KPI Grid - Larger cards */}
+                {/* Data Content */}
+                {!isLoading && summaryData && (
+                    <div className="space-y-8">
+
+
+                        {/* KPI Grid - Larger cards */}
                         <div>
                             <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center">
                                 Key Metrics
@@ -259,10 +264,7 @@ const HomePage: React.FC<HomePageProps> = ({ setPage }) => {
                                 ))}
                             </div>
                         </div>
-                
-                {/* Data Content */}
-                {!isLoading && summaryData && (
-                    <div className="space-y-8">
+
                         {/* Top Stats Row - Three columns now */}
                         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
                             <DeliveryDistribution
@@ -292,7 +294,7 @@ const HomePage: React.FC<HomePageProps> = ({ setPage }) => {
                             </div>
                         </div>
 
-                       
+
                     </div>
                 )}
             </div>
